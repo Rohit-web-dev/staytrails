@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Listing</title>
+    <!-- -- Bootstrap --  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- -- icon --  -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- -- css link --  -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="left-menu">
+        <div class="logo-div">
+          <img src="./assets/img/header/logo.png" alt="" />
+        </div>
+        <div class="side-munu">
+          <ul class="navbar-nav">
+            <li class="nav-item" onclick="location.href='profile.html'">
+              <i class="fas fa-user"></i>
+              <a href="profile.html" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item active" onclick="location.href='hotellisting.html'">
+              <i class="fas fa-clipboard-list"></i>
+              <a href="hotellisting.html" class="nav-link">Hotel Listing</a>
+            </li>
+            <li class="nav-item" onclick="location.href='booking.html'">
+              <i class="fas fa-calendar-alt"></i>
+              <a href="booking.html" class="nav-link">Bookings</a>
+            </li>
+            <li class="nav-item" onclick="location.href='pendingap.html'">
+              <i class="far fa-clock"></i>
+              <a href="pendingap.html" class="nav-link">Pending Approval</a>
+            </li>
+            <li class="nav-item" onclick="location.href='index.html'">
+              <i class="fas fa-sign-out"></i>
+              <a href="index.html" class="nav-link">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-content">
+        <!-- -- header --  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white padding-sec">
+          <div class="search">
+            <i class="far fa-search"></i>
+            <input type="search" placeholder="Search" />
+          </div>
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left: auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="./assets/img/header/user.png" alt=""
+                /></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Subhajit Podder
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action 1</a></li>
+                  <li><a class="dropdown-item" href="#">Action 2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- -- closed header --  -->
+        <!-- -- main content --  -->
+        <div class="main-content">
+          <div class="filter padding-sec">
+            <div class="history">
+              <h4>Hotel Listing</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="filter-btns">
+              <button onclick="location.href='page2a.html'">add hotel</button>
+            </div>
+          </div>
+          <div class="table-detail">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12 my-3">
+                <div class="card">
+                  <div class="clip-img">
+                    <img
+                      src="./assets/img/booking/01.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="fnm">Cynthia K. Ellis</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugiat nisi cupiditate adipisci quod harum porro
+                      reprehenderit
+                    </p>
+                    <div class="links">
+                    <a href="pendingdetails.html" tabindex="0" class="r-m"
+                      >Read More
+                      <i class="far fa-angle-right"></i>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 my-3">
+                <div class="card">
+                  <div class="clip-img">
+                    <img
+                      src="./assets/img/booking/02.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="fnm">Cynthia K. Ellis</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugiat nisi cupiditate adipisci quod harum porro
+                      reprehenderit
+                    </p>
+                    <div class="links">
+                    <a href="pendingdetails.html" tabindex="0" class="r-m"
+                      >Read More
+                      <i class="far fa-angle-right"></i>
+                    </a>
+                  </div>
+                  </div>  
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 my-3">
+                <div class="card">
+                  <div class="clip-img">
+                    <img
+                      src="./assets/img/booking/03.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="fnm">Cynthia K. Ellis</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugiat nisi cupiditate adipisci quod harum porro
+                      reprehenderit
+                    </p>
+                    <div class="links">
+                    <a href="pendingdetails.html" tabindex="0" class="r-m"
+                      >Read More
+                      <i class="far fa-angle-right"></i>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 my-3">
+                <div class="card">
+                  <div class="clip-img">
+                    <img
+                      src="./assets/img/booking/04.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="fnm">Cynthia K. Ellis</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugiat nisi cupiditate adipisci quod harum porro
+                      reprehenderit
+                    </p>
+                    <div class="links">
+                    <a href="pendingdetails.html" tabindex="0" class="r-m"
+                      >Read More
+                      <i class="far fa-angle-right"></i>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 my-3">
+                <div class="card">
+                  <div class="clip-img">
+                    <img
+                      src="./assets/img/booking/05.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="fnm">Cynthia K. Ellis</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugiat nisi cupiditate adipisci quod harum porro
+                      reprehenderit
+                    </p>
+                    <div class="links">
+                    <a href="pendingdetails.html" tabindex="0" class="r-m"
+                      >Read More
+                      <i class="far fa-angle-right"></i>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 my-3">
+                <div class="card">
+                  <div class="clip-img">
+                    <img
+                      src="./assets/img/booking/06.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="fnm">Cynthia K. Ellis</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugiat nisi cupiditate adipisci quod harum porro
+                      reprehenderit
+                    </p>
+                    <div class="links">
+                    <a href="pendingdetails.html" tabindex="0" class="r-m"
+                      >Read More
+                      <i class="far fa-angle-right"></i>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 my-3">
+                <div class="card">
+                  <div class="clip-img">
+                    <img
+                      src="./assets/img/booking/01.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="fnm">Cynthia K. Ellis</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugiat nisi cupiditate adipisci quod harum porro
+                      reprehenderit
+                    </p>
+                    <div class="links">
+                    <a href="pendingdetails.html" tabindex="0" class="r-m"
+                      >Read More
+                      <i class="far fa-angle-right"></i>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 my-3">
+                <div class="card">
+                  <div class="clip-img">
+                    <img
+                      src="./assets/img/booking/02.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="fnm">Cynthia K. Ellis</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugiat nisi cupiditate adipisci quod harum porro
+                      reprehenderit
+                    </p>
+                    <div class="links">
+                    <a href="pendingdetails.html" tabindex="0" class="r-m"
+                      >Read More
+                      <i class="far fa-angle-right"></i>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 my-3">
+                <div class="card">
+                  <div class="clip-img">
+                    <img
+                      src="./assets/img/booking/03.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="fnm">Cynthia K. Ellis</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugiat nisi cupiditate adipisci quod harum porro
+                      reprehenderit
+                    </p>
+                    <div class="links">
+                    <a href="pendingdetails.html" tabindex="0" class="r-m"
+                      >Read More
+                      <i class="far fa-angle-right"></i>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 my-3">
+                <div class="card">
+                  <div class="clip-img">
+                    <img
+                      src="./assets/img/booking/04.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="fnm">Cynthia K. Ellis</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugiat nisi cupiditate adipisci quod harum porro
+                      reprehenderit
+                    </p>
+                    <div class="links">
+                    <a href="pendingdetails.html" tabindex="0" class="r-m"
+                      >Read More
+                      <i class="far fa-angle-right"></i>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 my-3">
+                <div class="card">
+                  <div class="clip-img">
+                    <img
+                      src="./assets/img/booking/05.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="fnm">Cynthia K. Ellis</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugiat nisi cupiditate adipisci quod harum porro
+                      reprehenderit
+                    </p>
+                    <div class="links">
+                    <a href="pendingdetails.html" tabindex="0" class="r-m"
+                      >Read More
+                      <i class="far fa-angle-right"></i>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 my-3">
+                <div class="card">
+                  <div class="clip-img">
+                    <img
+                      src="./assets/img/booking/06.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="fnm">Cynthia K. Ellis</h4>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fugiat nisi cupiditate adipisci quod harum porro
+                      reprehenderit
+                    </p>
+                    <div class="links">
+                    <a href="pendingdetails.html" tabindex="0" class="r-m"
+                      >Read More
+                      <i class="far fa-angle-right"></i>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- -- closed main content --  -->
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

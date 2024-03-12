@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cancelled Booking</title>
+    <!-- -- Bootstrap --  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- -- icon --  -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- -- datepicker --  -->
+    <link
+      href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <!-- -- css link --  -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="left-menu">
+        <div class="logo-div">
+          <img src="./assets/img/header/logo.png" alt="" />
+        </div>
+        <div class="side-munu">
+          <ul class="navbar-nav">
+            <li class="nav-item" onclick="location.href='profile.html'">
+              <i class="fas fa-user"></i>
+              <a href="profile.html" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item" onclick="location.href='hotellisting.html'">
+              <i class="fas fa-clipboard-list"></i>
+              <a href="hotellisting.html" class="nav-link">Hotel Listing</a>
+            </li>
+            <li class="nav-item active" onclick="location.href='booking.html'">
+              <i class="fas fa-calendar-alt"></i>
+              <a href="booking.html" class="nav-link">Bookings</a>
+            </li>
+            <li class="nav-item" onclick="location.href='pendingap.html'">
+              <i class="far fa-clock"></i>
+              <a href="pendingap.html" class="nav-link">Pending Approval</a>
+            </li>
+            <li class="nav-item" onclick="location.href='index.html'">
+              <i class="fas fa-sign-out"></i>
+              <a href="index.html" class="nav-link">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-content">
+        <!-- -- header --  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white padding-sec">
+          <div class="search">
+            <i class="far fa-search"></i>
+            <input type="search" placeholder="Search" />
+          </div>
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left: auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="./assets/img/header/user.png" alt=""
+                /></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Subhajit Podder
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action 1</a></li>
+                  <li><a class="dropdown-item" href="#">Action 2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- -- closed header --  -->
+        <!-- -- main content --  -->
+        <div class="main-content">
+          <div class="filter padding-sec">
+            <div class="history" id="ubBtn">
+              <a href="booking.html" class="btns">Upcoming Booking</a> |
+              <a class="btns">Booking History</a> | 
+              <a href="cancelbooking.html" class="active">Cancelled Booking</a>
+            </div>
+            <div class="filter-btns">
+              <button onclick="location.href='booking.html'">Back</button>
+            </div>
+          </div>
+          <div class="table-detail">
+            <table id="table1">
+              <thead>
+                <tr>
+                  <th>
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Room Name</label
+                    >
+                  </th>
+                  <th></th>
+                  <th>Bed Type</th>
+                  <th>Room Floor</th>
+                  <th>Room Facility</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="./assets/img/booking/01.png" alt="img" />
+                  </td>
+                  <td>
+                    <a href="bookingdetails.html" class="r-code">#0004</a>
+                    <p>King Hotel</p>
+                  </td>
+                  <td>Double Bed</td>
+                  <td>Floor-G-05</td>
+                  <td>
+                    Lorem ipsum dolor sit, <br />
+                    amet consectetur elit.
+                  </td>
+                  <td>
+                    <a href="" class="booked">Cancelled</a>
+                    <p>jan 24th - 26th</p>
+                  </td>
+                  <td>
+                    <div class="dropdown">  
+                      <i
+                        class="far fa-ellipsis-h"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      ></i>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="bookingdetails.html"
+                            >View Details</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="./assets/img/booking/02.png" alt="img" />
+                  </td>
+                  <td>
+                    <a href="bookingdetails.html" class="r-code">#0004</a>
+                    <p>King Hotel</p>
+                  </td>
+                  <td>Double Bed</td>
+                  <td>Floor-G-05</td>
+                  <td>
+                    Lorem ipsum dolor sit, <br />
+                    amet consectetur elit.
+                  </td>
+                  <td>
+                    <a href="" class="booked">Cancelled</a>
+                    <p>jan 24th - 26th</p>
+                  </td>
+                  <td>
+                    <div class="dropdown">
+                      <i
+                        class="far fa-ellipsis-h"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      ></i>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="bookingdetails.html"
+                            >View Details</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="./assets/img/booking/03.png" alt="img" />
+                  </td>
+                  <td>
+                    <a href="bookingdetails.html" class="r-code">#0004</a>
+                    <p>King Hotel</p>
+                  </td>
+                  <td>Double Bed</td>
+                  <td>Floor-G-05</td>
+                  <td>
+                    Lorem ipsum dolor sit, <br />
+                    amet consectetur elit.
+                  </td>
+                  <td>
+                    <a href="" class="booked">Cancelled</a>
+                    <p>jan 24th - 26th</p>
+                  </td>
+                  <td>
+                    <div class="dropdown">
+                      <i
+                        class="far fa-ellipsis-h"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      ></i>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="bookingdetails.html"
+                            >View Details</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="./assets/img/booking/04.png" alt="img" />
+                  </td>
+                  <td>
+                    <a href="bookingdetails.html" class="r-code">#0004</a>
+                    <p>King Hotel</p>
+                  </td>
+                  <td>Double Bed</td>
+                  <td>Floor-G-05</td>
+                  <td>
+                    Lorem ipsum dolor sit, <br />
+                    amet consectetur elit.
+                  </td>
+                  <td>
+                    <a href="" class="booked">Cancelled</a>
+                    <p>jan 24th - 26th</p>
+                  </td>
+                  <td>
+                    <div class="dropdown">
+                      <i
+                        class="far fa-ellipsis-h"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      ></i>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="bookingdetails.html"
+                            >View Details</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="./assets/img/booking/07.png" alt="img" />
+                  </td>
+                  <td>
+                    <a href="bookingdetails.html" class="r-code">#0004</a>
+                    <p>King Hotel</p>
+                  </td>
+                  <td>Double Bed</td>
+                  <td>Floor-G-05</td>
+                  <td>
+                    Lorem ipsum dolor sit, <br />
+                    amet consectetur elit.
+                  </td>
+                  <td>
+                    <a href="" class="booked">Cancelled</a>
+                    <p>jan 24th - 26th</p>
+                  </td>
+                  <td>
+                    <div class="dropdown">
+                      <i
+                        class="far fa-ellipsis-h"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      ></i>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="bookingdetails.html"
+                            >View Details</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- -- closed main content --  -->
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price & Calender</title>
+    <!-- -- Bootstrap --  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- -- icon --  -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- -- fabicon --  -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/fabicon.png">
+    <!-- -- css --  -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/dashboard.css" />
+    <style>
+      .fst-div,
+      .snd-div {
+        background: #01c90e;
+        border-bottom: 0;
+      }
+      .fst-div p,
+      .snd-div p {
+        color: #fff;
+      }
+      .fst-div .num,
+      .snd-div .num { 
+        color: #fff;
+      }
+      .frh-div {
+        text-align: center;
+        border-bottom: 4px solid #e3b51c;
+      }
+      
+      @media only screen and (max-width: 770px) {
+        .top-content {
+          display: block;
+        }
+        .fst-div,
+        .trd-div,
+        .snd-div,
+        .fth-div {
+          display: none;
+        }
+          .frh-div {
+          width: 100%;
+        }
+        .price {
+          width: 60%;
+          padding: 40px 10px;
+        }
+      } 
+      @media only screen and (max-width: 500px) {
+        .price {
+          width: 98%;
+          padding: 40px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grand-div">
+      <div class="header">
+        <div class="logo">
+          <img src="./assets/img/header/logo.png" alt="" />
+        </div>
+      </div>
+      <!-- -- top-content --  -->
+      <div class="top-content">
+        <div class="arrow-div">
+          <div class="fst-div">
+            <p class="step">Step 1</p>
+            <p>Basic Details</p>
+            <p class="num">123456</p>
+          </div>
+          <div class="snd-div">
+            <p class="step">Step 2</p>
+            <p>Property Setup</p>
+            <p class="num">123456</p>
+          </div>
+        </div>
+        <div class="frh-div">
+          <p class="step">Step 3</p>
+          <p>
+            <span class="green-num">Pricing</span
+            ><span class="yellow-num"> and</span> Calender
+          </p>
+        </div>
+        <div class="fth-div">
+          <p class="step">Step 4</p>
+          <p>Legal Information</p>
+        </div>
+        <div class="trd-div">
+          <p class="step">Step 5</p>
+          <p>Photos</p>
+        </div>
+      </div>
+      <!-- -- closed top-content --  -->
+      <!-- -- price --  -->
+      <div class="price">
+        <div class="para-div">
+          <h4 class="price-heading">Rate Plans</h4>
+          <div class="price-grp-heading">
+            <p>
+              Price per group size <i class="fal fa-exclamation-circle"></i>
+            </p>
+            <button id="editorBtn5">Edit</button>
+          </div>
+          <textarea type="text" class="editor5" disabled>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur saepe reprehenderit consequuntur. Consequatur cumque consectetur optio illo repellat reiciendis aut necessitatibus fugit recusandae libero inventore vitae unde perspiciatis, quod laboriosam.
+          </textarea>
+        </div>
+
+        <div class="price-grp">
+          <h4 class="price-heading">Standard Rate Plans</h4>
+          <div class="price-grp-heading">
+            <p>
+              Price per group size <i class="fal fa-exclamation-circle"></i>
+            </p>
+            <button id="editorBtn2">Edit</button>
+          </div>
+          <div class="guest-pay">
+            <table>
+              <thead>
+                <tr>
+                  <th>Occupancy</th>
+                  <th>Guest Pay</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <i class="fal fa-user"></i
+                    ><sup><i class="fal fa-times"></i>4</sup>
+                  </td>
+                  <td>
+                    INR<input
+                      type="text"
+                      class="editor2"
+                      disabled
+                      value="1,000.00"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fal fa-user"></i
+                    ><sup><i class="fal fa-times"></i>4</sup>
+                  </td>
+                  <td>
+                    INR<input
+                      type="text"
+                      class="editor2"
+                      disabled
+                      value="900.00"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fal fa-user"></i
+                    ><sup><i class="fal fa-times"></i>4</sup>
+                  </td>
+                  <td>
+                    INR<input
+                      type="text"
+                      class="editor2"
+                      disabled
+                      value="850.00"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fal fa-user"></i
+                    ><sup><i class="fal fa-times"></i>4</sup>
+                  </td>
+                  <td>
+                    INR<input
+                      type="text"
+                      class="editor2"
+                      disabled
+                      value="800.00"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr />
+          <div class="price-grp-heading">
+            <p>
+              Price per group size <i class="fal fa-exclamation-circle"></i>
+            </p>
+            <button id="editorBtn">Edit</button>
+          </div>
+          <hr />
+          <p class="para">
+            <i class="far fa-check-circle"></i>
+            <input
+              type="text"
+              class="editor"
+              disabled
+              value="Lorem ipsum dolor adipisicing elit."
+            />
+          </p>
+          <p class="para">
+            <i class="far fa-check-circle"></i>
+            <input
+              type="text"
+              class="editor"
+              disabled
+              value="Lorem ipsum dolor adipisicing elit."
+            />
+          </p>
+        </div>
+        <div class="price-rate">
+          <h4 class="price-heading">Non-refundable Rate Plans</h4>
+          <div class="price-grp-heading">
+            <p>
+              Price per group size <i class="fal fa-exclamation-circle"></i>
+            </p>
+            <button id="editorBtn3">Edit</button>
+          </div>
+          <hr />
+          <p class="para">
+            <i class="far fa-check-circle"></i>
+            <input
+              type="text"
+              class="editor3"
+              disabled
+              value="Lorem ipsum dolor adipisicing elit."
+            />
+          </p>
+          <p class="para">
+            <i class="far fa-check-circle"></i>
+            <input
+              type="text"
+              class="editor3"
+              disabled
+              value="Lorem ipsum dolor adipisicing elit."
+            />
+          </p>
+        </div>
+
+        <div class="price-rate">
+          <h4 class="price-heading">Weekly Rate Plans</h4>
+          <div class="price-grp-heading">
+            <p>
+              Price per group size <i class="fal fa-exclamation-circle"></i>
+            </p>
+            <button id="editorBtn4">Edit</button>
+          </div>
+          <hr />
+          <p class="para">
+            <i class="far fa-check-circle"></i>
+            <input
+              type="text"
+              class="editor4"
+              disabled
+              value="Lorem ipsum dolor adipisicing elit."
+            />
+          </p>
+          <p class="para">
+            <i class="far fa-check-circle"></i>
+            <input
+              type="text"
+              class="editor4"
+              disabled
+              value="Lorem ipsum dolor adipisicing elit."
+            />
+          </p>
+        </div>
+
+        <div class="btns">
+          <button onclick="location.href='pageprice1.html'" class="left-arrow"
+            ><i class="far fa-arrow-left"></i>BACK</button
+          >
+          <button onclick="location.href='pageprice3.html'" class="continue"
+            >CONTINUE <i class="far fa-arrow-right"></i
+          ></button>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#editorBtn").click(function () {
+          var es_text = $("#editorBtn").text();
+          console.log(es_text);
+          if (es_text == "Edit") {
+            console.log("edit clked");
+            $("#editorBtn").text("Save");
+            $(".editor").prop("disabled", false);
+          } else {
+            $("#editorBtn").text("Edit");
+            $(".editor").prop("disabled", true);
+          }
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#editorBtn2").click(function () {
+          var es_text = $("#editorBtn2").text();
+          console.log(es_text);
+          if (es_text == "Edit") {
+            console.log("edit clked");
+            $("#editorBtn2").text("Save");
+            $(".editor2").prop("disabled", false);
+          } else {
+            $("#editorBtn2").text("Edit");
+            $(".editor2").prop("disabled", true);
+          }
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#editorBtn3").click(function () {
+          var es_text = $("#editorBtn3").text();
+          console.log(es_text);
+          if (es_text == "Edit") {
+            console.log("edit clked");
+            $("#editorBtn3").text("Save");
+            $(".editor3").prop("disabled", false);
+          } else {
+            $("#editorBtn3").text("Edit");
+            $(".editor3").prop("disabled", true);
+          }
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#editorBtn4").click(function () {
+          var es_text = $("#editorBtn4").text();
+          console.log(es_text);
+          if (es_text == "Edit") {
+            console.log("edit clked");
+            $("#editorBtn4").text("Save");
+            $(".editor4").prop("disabled", false);
+          } else {
+            $("#editorBtn4").text("Edit");
+            $(".editor4").prop("disabled", true);
+          }
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#editorBtn5").click(function () {
+          var es_text = $("#editorBtn5").text();
+          console.log(es_text);
+          if (es_text == "Edit") {
+            console.log("edit clked");
+            $("#editorBtn5").text("Save");
+            $(".editor5").prop("disabled", false);
+          } else {
+            $("#editorBtn5").text("Edit");
+            $(".editor5").prop("disabled", true);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

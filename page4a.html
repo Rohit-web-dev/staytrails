@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page4a</title>
+    <!-- -- Bootstrap --  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- -- icon --  -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- -- fabicon --  -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/fabicon.png">
+    <!-- -- css --  -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/dashboard.css" />
+    <style>
+      .fst-div {
+        background: #01c90e;
+        border-bottom: 0;
+      }
+      .fst-div p {
+        color: #fff;
+      }
+      .fst-div .num {
+        color: #fff;
+      }
+      .snd-div {
+        text-align: center;
+        border-bottom: 4px solid #e3b51c;
+      }
+      @media only screen and (max-width: 770px) {
+        .top-content {
+          display: block;
+        }
+        .fst-div,
+        .trd-div,
+        .frh-div,
+        .fth-div {
+          display: none;
+        }
+         .snd-div {
+          width: 100%;
+        }
+      } 
+    </style>
+  </head>
+  <body>
+    <div class="grand-div">
+      <div class="header">
+        <div class="logo">
+          <img src="./assets/img/header/logo.png" alt="" />
+        </div>
+      </div>
+      <!-- -- top-content --  -->
+      <div class="top-content">
+        <div class="arrow-div">
+          <div class="fst-div">
+            <p class="step">Step 1</p>
+            <p>Basic Details</p>
+            <p class="num">123456</p>
+          </div>
+          <div class="snd-div">
+            <p class="step">Step 2</p>
+            <p>Property Setup</p>
+            <p class="num"><span class="yellow-num">1</span>23456</p>
+          </div>
+        </div>
+        <div class="frh-div">
+          <p class="step">Step 3</p>
+          <p>Pricing and Calender</p>
+        </div>
+        <div class="fth-div">
+          <p class="step">Step 4</p>
+          <p>Legal Information</p>
+        </div>
+        <div class="trd-div">
+          <p class="step">Step 5</p>
+          <p>Photos</p>
+        </div>
+      </div>
+      <!-- -- closed top-content --  -->
+
+      <div class="badrooms">
+        <h4 class="heading">Bedrooms 1</h4>
+
+        <div id="panel">
+          <div class="duplicate">
+            <div class="badrooms-option">
+              <p class="text">Which bed are available in this room?</p>
+
+              <div class="beds row d-flex align-items-center reverse">
+                <div class="col-md-10 col-12 my-2">
+                  <p class="text1">Single Bed</p>
+                  <p class="text2">90-130 cm wide</p>
+                  <div class="counter">
+                    <button class="dec">-</button>
+                    <input
+                      type="text"
+                      value="0"
+                      class="count"
+                      disabled
+                      id="4"
+                    />
+                    <button class="inc">+</button>
+                  </div>
+                </div>
+                <div class="col-md-2 col-12 my-2">
+                  <i class="fas fa-bed"></i>
+                </div>
+              </div>
+              <hr />
+              <div class="beds row d-flex align-items-center reverse">
+                <div class="col-md-10 col-12 my-2">
+                  <p class="text1">Double Bed</p>
+                  <p class="text2">131-15 0 cm wide</p>
+                  <div class="counter">
+                    <button class="dec">-</button>
+                    <input
+                      type="text"
+                      value="0"
+                      class="count"
+                      disabled
+                      id="3"
+                    />
+                    <button class="inc">+</button>
+                  </div>
+                </div>
+                <div class="col-md-2 col-12 my-2">
+                  <i class="fas fa-bed"></i>
+                </div>
+              </div>
+              <hr />
+              <div class="beds row d-flex align-items-center reverse">
+                <div class="col-md-10 col-12 my-2">
+                  <p class="text1">Large Bed</p>
+                  <p class="text2">151-180 cm wide</p>
+                  <div class="counter">
+                    <button class="dec">-</button>
+                    <input
+                      type="text"
+                      id="1"
+                      value="0"
+                      disabled
+                      class="count"
+                    />
+                    <button class="inc">+</button>
+                  </div>
+                </div>
+                <div class="col-md-2 col-12 my-2">
+                  <i class="fas fa-bed"></i>
+                </div>
+              </div>
+            </div>
+            <div class="badrooms-option">
+              <div class="my-4">
+                <p class="text2">How many guest can stay?</p>
+                <div class="counter">
+                  <button class="dec">-</button>
+                  <input type="text" id="2" value="0" disabled class="count" />
+                  <button class="inc">+</button>
+                </div>
+                <hr />
+                <p class="text2">How many Bathrooms are there?</p>
+                <div class="counter">
+                  <button class="dec">-</button>
+                  <input type="text" id="6" value="0" disabled class="count" />
+                  <button class="inc">+</button>
+                </div>
+              </div>
+              <hr />
+              <div class="my-4">
+                <p class="text2">How many guest can stay?</p>
+                <p class="text3">Apartment size - optional</p>
+                <form>
+                  <input
+                    type="text"
+                    placeholder="Enter square meters"
+                    class="square"
+                  />
+                  <div class="sqr-mtr">
+                    <a href=""> SQUARE METERS </a>
+                    <i class="far fa-angle-up"></i>
+                    <i class="far fa-angle-down"></i>
+                  </div>
+                </form>
+              </div>
+              <!-- <a href="#" class="add-beds">
+                <p>Add Bedroom</p>
+                <button><i class="fal fa-plus-circle"></i></button>
+              </a> -->
+            </div>
+          </div>
+        </div>
+        <div
+          class="badrooms-option"
+          id="buttons"
+          style="display: flex; gap: 5px"
+        >
+          <a class="add-beds clone">
+            <p>Add Bedroom</p>
+            <button><i class="fal fa-plus-circle"></i></button>
+          </a>
+          <a class="add-beds remove" id="removeBad">
+            <div class="d-flex align-items-center justify-content-center">
+              <p>Remove Bedroom</p>
+              <button><i class="fal fa-times"></i></button>
+            </div>
+          </a>
+        </div>
+
+        <div class="btns">
+          <button onclick="location.href='propdesc.html'" class="left-arrow"
+            ><i class="far fa-arrow-left"></i>BACK</button
+          >
+          <button onclick="location.href='page5a.html'" class="continue"
+            >CONTINUE <i class="far fa-arrow-right"></i
+          ></button>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- -- duplicate the form down --  -->
+    <script>
+      document.getElementById("removeBad").style.display = "none";
+      var copy = $(".duplicate");
+
+      $(".remove").click(function (e) {
+        $(".duplicate:last").remove();
+        var l = $(".duplicate").length;
+        if (l < 2) {
+          $("#removeBad").hide();
+        }
+        $("#panel").append(copy);
+      });
+
+      $(".clone").click(function () {
+        $(".duplicate:last").clone(true).insertBefore($("#buttons"));
+        document.getElementById("removeBad").style.display = "block";
+      });
+    </script>
+
+    <!-- -- inc & dec counter --  -->
+    <script>
+      $(".inc").click(function () {
+        updateValue(this, 1);
+      });
+      $(".dec").click(function () {
+        updateValue(this, -1);
+      });
+
+      function updateValue(obj, delta) {
+        var item = $(obj).parent().find("input");
+        var newValue = parseInt(item.val(), 10) + delta;
+        item.val(Math.max(newValue, 0));
+      }
+    </script>
+  </body>
+</html>

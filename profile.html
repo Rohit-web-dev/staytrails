@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <!-- -- Bootstrap --  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- -- icon --  -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- -- css link --  -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="left-menu">
+        <div class="logo-div">
+          <img src="./assets/img/header/logo.png" alt="" />
+        </div>
+        <div class="side-munu">
+          <ul class="navbar-nav">
+            <li class="nav-item active" onclick="location.href='profile.html'">
+              <i class="fas fa-user"></i>
+              <a href="profile.html" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item" onclick="location.href='hotellisting.html'">
+              <i class="fas fa-clipboard-list"></i>
+              <a href="hotellisting.html" class="nav-link">Hotel Listing</a>
+            </li>
+            <li class="nav-item" onclick="location.href='booking.html'">
+              <i class="fas fa-calendar-alt"></i>
+              <a href="booking.html" class="nav-link">Bookings</a>
+            </li>
+            <li class="nav-item" onclick="location.href='pendingap.html'">
+              <i class="far fa-clock"></i>
+              <a href="pendingap.html" class="nav-link">Pending Approval</a>
+            </li>
+            <li class="nav-item" onclick="location.href='index.html'">
+              <i class="fas fa-sign-out"></i>
+              <a href="index.html" class="nav-link">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-content">
+        <!-- -- header --  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white padding-sec">
+          <div class="search">
+            <i class="far fa-search"></i>
+            <input type="search" placeholder="Search" />
+          </div>
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left: auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="./assets/img/header/user.png" alt=""
+                /></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Subhajit Podder
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action 1</a></li>
+                  <li><a class="dropdown-item" href="#">Action 2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- -- closed header --  -->
+        <!-- -- main content --  -->
+        <div class="main-content">
+          <div class="per-info padding-sec">
+            <h4>personal Info</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <div class="table-detail profile">
+            <form>
+              <div class="row">
+                <div class="mb-3 col-md-6 col-12">
+                  <label for="fname" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fname"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3 col-md-6 col-12">
+                  <label for="lname" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lname"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="upload-img mt-4">
+                <div class="img-div mb-3">
+                  <img
+                    id="imgPrime"
+                    src=""
+                    alt="uploaded image placeholder"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="upload-opn mb-3">
+                  <div id="userActions">
+                    <div class="img-opt">
+                      <label for="fileUpload"
+                        ><i class="fad fa-cloud-upload"></i
+                      ></label>
+                      <p>Click to upload or drag and drop</p>
+                      <p>AVG, PNG, JPG or GIF <span>(max, 800x400px)</span></p>
+                      <input type="file" id="fileUpload" />
+                    </div>
+                  </div>
+                  <div class="btns-div">
+                    <button type="submit" class="btn btns1">
+                      Save Changes
+                    </button>
+                    <button type="submit" class="btn btns2">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="per-info padding-sec">
+            <h4>Password Info</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <div class="table-detail profile">
+            <form>
+              <div class="mb-3">
+                <label for="crpassword" class="form-label"
+                  >Current Password</label
+                >
+                <input type="password" class="form-control" id="crpassword" />
+              </div>
+              <div class="mb-3">
+                <label for="nwpassword" class="form-label">New Password</label>
+                <input type="password" class="form-control" id="nwpassword" />
+              </div>
+              <div class="mb-3">
+                <label for="cpassword" class="form-label"
+                  >Confirm Password</label
+                >
+                <input type="password" class="form-control" id="cpassword" />
+              </div>
+              <div class="btns-div">
+                <button type="submit" class="btn btns1">Save Changes</button>
+                <button type="submit" class="btn btns2">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- -- closed main content --  -->
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- -- img drop & drag --  -->
+    <script>
+      "use strict";
+      /**
+// ||||||||||||||||||||||||||||||| \\
+//	Global Object $: Generic controls
+// ||||||||||||||||||||||||||||||| \\
+**/
+      (function () {
+        // http://stackoverflow.com/questions/4083351/what-does-jquery-fn-mean
+        var $ = function (elem) {
+          if (!(this instanceof $)) {
+            return new $(elem);
+          }
+          this.el = document.getElementById(elem);
+        };
+        window.$ = $;
+        $.prototype = {
+          onChange: function (callback) {
+            this.el.addEventListener("change", callback);
+            return this;
+          },
+        };
+      })();
+
+      /**
+// ||||||||||||||||||||||||||||||| \\
+//	Drag and Drop code for Upload
+// ||||||||||||||||||||||||||||||| \\
+**/
+      var dragdrop = {
+        init: function (elem) {
+          elem.setAttribute("ondrop", "dragdrop.drop(event)");
+          elem.setAttribute("ondragover", "dragdrop.drag(event)");
+        },
+        drop: function (e) {
+          e.preventDefault();
+          var file = e.dataTransfer.files[0];
+          runUpload(file);
+        },
+        drag: function (e) {
+          e.preventDefault();
+        },
+      };
+
+      /**
+// ||||||||||||||||||||||||||||||| \\
+//	Code to capture a file (image) 
+//  and upload it to the browser
+// ||||||||||||||||||||||||||||||| \\
+**/
+      function runUpload(file) {
+        // http://stackoverflow.com/questions/12570834/how-to-preview-image-get-file-size-image-height-and-width-before-upload
+        if (
+          file.type === "image/png" ||
+          file.type === "image/jpg" ||
+          file.type === "image/jpeg" ||
+          file.type === "image/gif" ||
+          file.type === "image/bmp"
+        ) {
+          var reader = new FileReader(),
+            image = new Image();
+          reader.readAsDataURL(file);
+          reader.onload = function (_file) {
+            $("imgPrime").el.src = _file.target.result;
+            $("imgPrime").el.style.display = "inline";
+          }; // END reader.onload()
+        } // END test if file.type === image
+      }
+
+      /**
+// ||||||||||||||||||||||||||||||| \\
+//	window.onload fun
+// ||||||||||||||||||||||||||||||| \\
+**/
+      window.onload = function () {
+        if (window.FileReader) {
+          // Connect the DIV surrounding the file upload to HTML5 drag and drop calls
+          dragdrop.init($("userActions").el);
+          //	Bind the input[type="file"] to the function runUpload()
+          $("fileUpload").onChange(function () {
+            runUpload(this.files[0]);
+          });
+        } else {
+          // Report error message if FileReader is unavilable
+          var p = document.createElement("p"),
+            msg = document.createTextNode(
+              "Sorry, your browser does not support FileReader."
+            );
+          p.className = "error";
+          p.appendChild(msg);
+          $("userActions").el.innerHTML = "";
+          $("userActions").el.appendChild(p);
+        }
+      };
+    </script>
+  </body>
+</html>

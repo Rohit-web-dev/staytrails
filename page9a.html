@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page9a</title>
+    <!-- -- Bootstrap --  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- -- icon --  -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- -- fabicon --  -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/fabicon.png">
+    <!-- -- css --  -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/dashboard.css" />
+    <style>
+      .fst-div {
+        background: #01c90e;
+        border-bottom: 0;
+      }
+      .fst-div p {
+        color: #fff;
+      }
+      .fst-div .num {
+        color: #fff;
+      }
+      .snd-div {
+        text-align: center;
+        border-bottom: 4px solid #e3b51c;
+      }
+      @media only screen and (max-width: 770px) {
+        .top-content {
+          display: block;
+        }
+        .fst-div,
+        .trd-div,
+        .frh-div,
+        .fth-div {
+          display: none;
+        }
+         .snd-div {
+          width: 100%;
+        }
+      } 
+    </style>
+  </head>
+  <body>
+    <div class="grand-div">
+      <div class="header">
+        <div class="logo">
+          <img src="./assets/img/header/logo.png" alt="" />
+        </div>
+      </div>
+      <!-- -- top-content --  -->
+      <div class="top-content">
+        <div class="arrow-div">
+          <div class="fst-div">
+            <p class="step">Step 1</p>
+            <p>Basic Details</p>
+            <p class="num">123456</p>
+          </div>
+          <div class="snd-div">
+            <p class="step">Step 2</p>
+            <p>Property Setup</p>
+            <p class="num">
+              <span class="green-num">12345</span
+              ><span class="yellow-num">6</span>
+            </p>
+          </div>
+        </div>
+        <div class="frh-div">
+          <p class="step">Step 3</p>
+          <p>Pricing and Calender</p>
+        </div>
+        <div class="fth-div">
+          <p class="step">Step 4</p>
+          <p>Legal Information</p>
+        </div>
+        <div class="trd-div">
+          <p class="step">Step 5</p>
+          <p>Photos</p>
+        </div>
+      </div>
+      <!-- -- closed top-content --  -->
+      <div class="host">
+        <h4 class="heading">Host Profile</h4>
+        <div class="host-option">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            quo eius quasi voluptatem voluptatum non nisi laudantium natus esse
+            earum, odit
+          </p>
+          <div class="d-flex mb-2">
+            <input type="checkbox" id="hsOption1" />
+            <label for="hsOption1">The property</label>
+          </div>
+          <div class="d-flex mb-2">
+            <input type="checkbox" id="hsOption2" />
+            <label for="hsOption2">the host</label>
+          </div>
+          <div class="d-flex mb-2">
+            <input type="checkbox" id="hsOption3" />
+            <label for="hsOption3">The nightbourdhood</label>
+          </div>
+          <div class="d-flex mb-2">
+            <input type="checkbox" id="hsOption4" />
+            <label for="hsOption4">None of the above</label>
+          </div>
+        </div>
+        <div class="btns">
+          <button onclick="location.href='page8a.html'" class="left-arrow"
+            ><i class="far fa-arrow-left"></i>BACK</button
+          >
+          <button onclick="location.href='pageprice1.html'" class="continue"
+            >CONTINUE <i class="far fa-arrow-right"></i
+          ></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
